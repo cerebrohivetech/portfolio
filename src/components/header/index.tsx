@@ -14,7 +14,7 @@ export default function Header() {
         setShowNav((prevNav) => !prevNav);
     }
     return (
-        <header className="bg-white shadow-first-60/[10%] md:shadow-first-60/[25%] relative flex h-[98px] w-full items-center justify-between p-[20px] shadow-sm md:px-[30px] md:shadow-lg lg:px-[50px] xl:px-[100px]">
+        <header className="shadow-first-60/[10%] md:shadow-first-60/[25%] relative flex h-[98px] w-full items-center justify-between bg-white p-[20px] shadow-sm md:px-[30px] md:shadow-lg lg:px-[50px] xl:px-[100px]">
             <Link href="/">
                 <Image
                     src={Logo}

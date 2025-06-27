@@ -14,7 +14,9 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <body className={`bg-background ${GBO_GROTESK.className} antialiased`}>
+            <body
+                className={`bg-background ${GBO_GROTESK.className} antialiased`}
+            >
                 <Header />
                 {children}
             </body>

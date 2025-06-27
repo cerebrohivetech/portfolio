@@ -2,7 +2,7 @@ import { LandingHero } from "@/components";
 
 export default function Home() {
     return (
-        <main> 
+        <main>
             <LandingHero />
         </main>
     );

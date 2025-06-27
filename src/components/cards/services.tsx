@@ -1,5 +1,1 @@
-
-
-export default function ServiceCard() {
-    
-}
+export default function ServiceCard() {}
