@@ -22,6 +22,7 @@ export default function LandingHero() {
                 <Image
                     src={ArtWork}
                     alt=""
+                    // priority={true}
                     className="img-shadow size-full object-cover"
                 />
             </div>

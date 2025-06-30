@@ -1,4 +1,4 @@
-import ServiceCard from "./services";
+import Service from "./services";
 
-export { ServiceCard };
+export { Service };
 export * from "./services";

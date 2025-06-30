@@ -11,7 +11,7 @@ export default function Button(props: ButtonProp) {
     return (
         <button
             type="button"
-            className={`bg-first-60 border-first-40 ${variant === "standard" && "btn-shadow"} rounded-sm border-[1px] px-[14px] py-[10px] text-sm font-semibold text-white`}
+            className={`bg-first-60 ${variant === "standard" && "btn-shadow border-first-40 border-[1px]"} rounded-sm px-[14px] py-[10px] text-sm font-semibold text-white`}
         >
             {icon && <Image src={icon} alt="" />}
             {text}
