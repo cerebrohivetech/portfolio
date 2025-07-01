@@ -1,4 +1,5 @@
 import Service from "./services";
+import Brands from "./brands";
 
-export { Service };
+export { Service, Brands };
 export * from "./services";

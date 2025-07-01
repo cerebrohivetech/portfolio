@@ -6,7 +6,7 @@ type ServiceCardProps = {
 };
 export default function Service() {
     return (
-        <section className="service-shadow mb-30 flex flex-col justify-between px-[20px] py-[40px] text-white md:flex-row md:px-[30px] md:py-[50px] xl:gap-[60px] xl:px-[80px] xl:py-[80px]">
+        <section className="service-shadow flex flex-col justify-between px-[20px] py-[40px] text-white md:flex-row md:px-[30px] md:py-[50px] xl:gap-[60px] xl:px-[80px] xl:py-[80px]">
             <h2 className="mb-[22px] w-[298px] text-[1.25rem]/[1.75rem] font-semibold sm:mb-[28px] lg:text-[1.75rem]/[2.1rem] xl:text-[2.5rem]/[2.75rem]">
                 Services
             </h2>
