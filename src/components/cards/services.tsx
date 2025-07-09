@@ -4,33 +4,8 @@ type ServiceCardProps = {
     title: string;
     description: string;
 };
-export default function Service() {
-    return (
-        <section className="service-shadow flex flex-col justify-between px-[20px] py-[40px] text-white md:flex-row md:px-[30px] md:py-[50px] xl:gap-[60px] xl:px-[80px] xl:py-[80px]">
-            <h2 className="mb-[22px] w-[298px] sm:mb-[28px]">Services</h2>
-            <div className="grid grid-cols-1 gap-[20px] md:grid-cols-2 lg:grid-rows-2 lg:gap-[40px]">
-                <ServiceCard
-                    title="Mobile app development"
-                    description="We are the perfect software and hardware technology outsourcing firm for "
-                />
-                <ServiceCard
-                    title="Embedded system development"
-                    description="We are the perfect software and hardware technology outsourcing firm for "
-                />
-                <ServiceCard
-                    title="Web development"
-                    description="We are the perfect software and hardware technology outsourcing firm for "
-                />
-                <ServiceCard
-                    title="Engineering augmentation"
-                    description="We are the perfect software and hardware technology outsourcing firm for "
-                />
-            </div>
-        </section>
-    );
-}
 
-function ServiceCard(props: ServiceCardProps) {
+export function ServiceCard(props: ServiceCardProps) {
     const { title, description } = props;
     return (
         <div className="border-second-70 rounded-lg border-[1px] px-[20px] py-[32px] lg:h-[260px] lg:px-[40px] lg:py-[32px] 2xl:w-[442px]">

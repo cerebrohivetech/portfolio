@@ -1,10 +1,11 @@
 import { Brands } from "../cards";
 import Product from "../cards/product";
 import CaseImage from "@/assets/images/project-display.png";
+import { Section } from "../elements";
 
 export default function Portfolio() {
     return (
-        <section className="bg-[url('/bg-image.svg')] px-[20px] py-[56px] text-white shadow-xl shadow-[#10182840] lg:px-[70px] lg:py-[70px] xl:px-[100px] xl:py-[88px]">
+        <Section className="bg-[url('/bg-image.svg')] text-white shadow-xl shadow-[#10182840]">
             <Brands />
 
             <div className="flex flex-col gap-[64px]">
@@ -24,6 +25,6 @@ export default function Portfolio() {
                     images={[CaseImage, CaseImage]}
                 />
             </div>
-        </section>
+        </Section>
     );
 }

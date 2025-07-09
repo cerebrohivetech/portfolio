@@ -7,7 +7,7 @@ import Menu from "@/assets/svg/menu.svg";
 import { useState } from "react";
 import Button from "../button";
 
-export default function Header() {
+export function Header() {
     const [showNav, setShowNav] = useState(false);
 
     function handleShowNav() {
@@ -56,24 +56,26 @@ export default function Header() {
 }
 
 function MobileMenu({ showNav }: { showNav: boolean }) {
+    const className = "text-second-70 mr-[30px] mb-3 text-xs font-[400]";
+
     return (
         <nav
             className={`shadow-second-70/[25%] ${showNav ? "absolute" : "hidden"} inset-x-0 inset-y-[98px] flex h-[200px] w-full items-start justify-between bg-white px-[40px] py-[40px] shadow-sm md:hidden`}
         >
             <ul className="items-center md:flex">
-                <li className="text-second-70 mr-[30px] mb-3 text-xs font-[400]">
+                <li className={className}>
                     <Link href="">About us</Link>
                 </li>
-                <li className="text-second-70 mr-[30px] mb-3 text-xs font-[400]">
+                <li className={className}>
                     <Link href="">Portfolio</Link>
                 </li>
-                <li className="text-second-70 mr-[30px] mb-3 text-xs font-[400]">
+                <li className={className}>
                     <Link href="">Our Products</Link>
                 </li>
-                <li className="text-second-70 mr-[30px] mb-3 text-xs font-[400]">
+                <li className={className}>
                     <Link href="">Blog</Link>
                 </li>
-                <li className="text-second-70 mr-[30px] mb-3 text-xs font-[400]">
+                <li className={className}>
                     <Link href="">Contact us</Link>
                 </li>
             </ul>

@@ -1,6 +1,6 @@
-import Header from "@/components/header";
 import "./globals.css";
 import { Host_Grotesk } from "next/font/google";
+import { Header, Footer } from "@/components";
 
 const GBO_GROTESK = Host_Grotesk({
     weight: ["400", "700"],
@@ -19,6 +19,7 @@ export default function RootLayout({
             >
                 <Header />
                 {children}
+                <Footer />
             </body>
         </html>
     );

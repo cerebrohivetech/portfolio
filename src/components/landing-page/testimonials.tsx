@@ -3,6 +3,7 @@
 import Image, { StaticImageData } from "next/image";
 import { useState } from "react";
 import { Testimonials } from "@/lib/dummyData";
+import { Section } from "../elements";
 
 type TestimonyProp = {
     description: string;
@@ -18,7 +19,7 @@ export default function Testimonial() {
     const [currentPage, setCurrentPage] = useState(0);
 
     return (
-        <section className="flex flex-col gap-[16px] px-[20px] py-[40px] text-white md:flex-row md:gap-20 xl:items-center xl:gap-[120px] xl:px-[100px] xl:py-[80px]">
+        <Section className="flex flex-col gap-[16px] text-white md:flex-row md:gap-20 xl:items-center xl:gap-[120px]">
             <h2 className="relative ml-[8px] sm:ml-0 md:top-4 md:w-[292px] xl:-top-12 xl:h-[132px] xl:w-[292px]">
                 What our clients are saying
             </h2>
@@ -59,7 +60,7 @@ export default function Testimonial() {
                     ))}
                 </div>
             </div>
-        </section>
+        </Section>
     );
 }
 

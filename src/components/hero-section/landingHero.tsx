@@ -1,10 +1,11 @@
 import Button from "../button";
 import Image from "next/image";
 import ArtWork from "@/assets/images/frame-102.svg";
+import { Hero } from "../elements";
 
 export default function LandingHero() {
     return (
-        <section className="w-full bg-white">
+        <Hero>
             <div className="flex flex-col gap-[24px] px-[20px] pt-[32px] pb-[48px] sm:px-[40px] md:gap-[30px] md:px-[50px] md:pt-[96px] md:pb-[136px] lg:flex-row lg:gap-[50px] lg:px-[100px] xl:gap-[80px]">
                 <h1 className="text-second-10 font-semibold">
                     We build tech solutions for businesses
@@ -26,6 +27,6 @@ export default function LandingHero() {
                     className="img-shadow size-full object-cover"
                 />
             </div>
-        </section>
+        </Hero>
     );
 }
