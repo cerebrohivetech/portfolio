@@ -26,22 +26,22 @@ export function Header() {
             <nav className="hidden md:flex md:h-0 md:w-full md:items-center md:justify-end md:bg-transparent md:py-0 md:shadow-none">
                 <ul className="items-center md:flex">
                     <li className="text-second-70 mr-[30px] text-xs font-[400] lg:text-base">
-                        <Link href="">About us</Link>
+                        <Link href="/about">About us</Link>
                     </li>
                     <li className="text-second-70 mr-[30px] text-xs font-[400] lg:text-base">
-                        <Link href="">Portfolio</Link>
+                        <Link href="/portfolio">Portfolio</Link>
                     </li>
                     <li className="text-second-70 mr-[30px] text-xs font-[400] lg:text-base">
-                        <Link href="">Our Products</Link>
+                        <Link href="/products">Our Products</Link>
                     </li>
                     <li className="text-second-70 mr-[30px] text-xs font-[400] lg:text-base">
-                        <Link href="">Blog</Link>
+                        <Link href="/blog">Blog</Link>
                     </li>
                     <li className="text-second-70 mr-[30px] text-xs font-[400] lg:text-base">
-                        <Link href="">Contact us</Link>
+                        <Link href="contact">Contact us</Link>
                     </li>
                 </ul>
-                <Button text="Get a quote" variant="standard" />
+                <Button text="Get a quote" variant="standard" link="/get_quote" />
             </nav>
             <button
                 type="button"
@@ -60,26 +60,26 @@ function MobileMenu({ showNav }: { showNav: boolean }) {
 
     return (
         <nav
-            className={`shadow-second-70/[25%] ${showNav ? "absolute" : "hidden"} inset-x-0 inset-y-[98px] flex h-[200px] w-full items-start justify-between bg-white px-[40px] py-[40px] shadow-sm md:hidden`}
+            className={`shadow-second-70/[25%] ${showNav ? "absolute" : "hidden"} inset-x-0 inset-y-[98px] flex h-[200px] w-full items-start justify-between bg-white px-[40px] py-[40px] shadow-sm md:hidden z-50`}
         >
             <ul className="items-center md:flex">
                 <li className={className}>
-                    <Link href="">About us</Link>
+                    <Link href="/about">About us</Link>
                 </li>
                 <li className={className}>
-                    <Link href="">Portfolio</Link>
+                    <Link href="/portfolio">Portfolio</Link>
                 </li>
                 <li className={className}>
-                    <Link href="">Our Products</Link>
+                    <Link href="/products">Our Products</Link>
                 </li>
                 <li className={className}>
                     <Link href="">Blog</Link>
                 </li>
                 <li className={className}>
-                    <Link href="">Contact us</Link>
+                    <Link href="/contact">Contact us</Link>
                 </li>
             </ul>
-            <Button text="Get a quote" variant="standard" />
+            <Button text="Get a quote" variant="standard" link="/get_quote" />
         </nav>
     );
 }

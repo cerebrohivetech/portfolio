@@ -61,7 +61,7 @@ function Navbar() {
                     <Link href="">Contact us</Link>
                 </li>
                 <li className={className}>
-                    <Link href="">Leave a qoute</Link>
+                    <Link href="/get_qoute">Leave a qoute</Link>
                 </li>
             </ul>
         </nav>

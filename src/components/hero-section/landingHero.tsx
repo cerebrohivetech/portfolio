@@ -16,7 +16,7 @@ export default function LandingHero() {
                         outsourcing firm for businesses solving problems within
                         the African space.
                     </p>
-                    <Button text="Get a quote" variant="standard" />
+                    <Button text="Get a quote" variant="standard" link="/get_quote" />
                 </div>
             </div>
             <div className="img-shadow h-[320px] w-full md:h-[480px]">

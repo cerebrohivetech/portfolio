@@ -22,7 +22,7 @@ export default function BrandCard() {
     );
 }
 
-function Companies() {
+export function Companies() {
     const companyList = [
         GTBankIcon,
         PayStackIcon,
