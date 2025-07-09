@@ -1,8 +1,5 @@
 @import "tailwindcss";
 
-@layer base {
-}
-
 @theme {
     /* background color  */
     --color-background: oklch(0.1858 0.0113 260.65);
@@ -46,5 +43,21 @@
         box-shadow:
             0px -16px 24px 5px #10182840,
             0px 16px 24px 5px #10182840;
+    }
+    h1 {
+        @apply text-[1.75rem]/[2rem] sm:text-[2.75rem]/[3rem] md:text-[3.5rem]/[4rem];
+    }
+    h2 {
+        @apply text-[1.25rem]/[1.75rem] font-semibold md:text-[1.5rem]/[2rem] lg:text-[1.75rem]/[2.1rem] xl:text-[2.5rem]/[2.75rem];
+    }
+    h3 {
+        @apply text-base/[1.25rem] font-semibold xl:text-[1.5rem]/[1.75rem];
+    }
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+    .no-scrollbar {
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
     }
 }

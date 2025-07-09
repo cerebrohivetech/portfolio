@@ -6,7 +6,7 @@ export default function LandingHero() {
     return (
         <section className="w-full bg-white">
             <div className="flex flex-col gap-[24px] px-[20px] pt-[32px] pb-[48px] sm:px-[40px] md:gap-[30px] md:px-[50px] md:pt-[96px] md:pb-[136px] lg:flex-row lg:gap-[50px] lg:px-[100px] xl:gap-[80px]">
-                <h1 className="text-second-10 text-[1.75rem]/[2rem] font-semibold sm:text-[2.75rem]/[3rem] md:text-[3.5rem]/[4rem]">
+                <h1 className="text-second-10 font-semibold">
                     We build tech solutions for businesses
                 </h1>
                 <div className="flex flex-col items-start gap-[24px] md:gap-[32px]">

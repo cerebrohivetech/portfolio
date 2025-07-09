@@ -9,7 +9,7 @@ import PayPalIcon from "@/assets/svg/PayPal - png 0.svg";
 export default function BrandCard() {
     return (
         <div className="mb-[56px] flex flex-col gap-[24px] sm:gap-[30px] md:flex-row md:gap-[50px] lg:mb-[70px] lg:gap-[60px] xl:mb-[88px] xl:justify-between">
-            <h2 className="text-[1.25rem]/[1.75rem] font-semibold md:w-[170px] md:text-[1.5rem]/[2rem] lg:w-[230px] xl:w-[292px] xl:text-[2.5rem]/[2.75rem]">
+            <h2 className="md:w-[170px] lg:w-[230px] xl:w-[292px]">
                 Portfolio
             </h2>
             <div className="flex flex-col gap-[24px] sm:gap-[30px] xl:gap-[40px]">

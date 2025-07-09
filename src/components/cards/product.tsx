@@ -15,9 +15,7 @@ export default function Product(props: ProductProp) {
     return (
         <section className="flex flex-col gap-[40px] lg:flex-row lg:justify-between xl:gap-[60px]">
             <div className="xl:w-[292px]">
-                <h3 className="text-base/[1.25rem] font-semibold xl:text-[1.5rem]/[1.75rem]">
-                    {title}
-                </h3>
+                <h3>{title}</h3>
                 <p className="text-second-110 w-[256px] py-[16px] text-sm/[1.375rem] font-normal sm:w-[300px] md:w-[320px] lg:w-[256px] xl:py-[24px] xl:text-base/[1.5rem]">
                     {description}
                 </p>
@@ -40,7 +38,7 @@ export default function Product(props: ProductProp) {
 
 function CaseStudyDisplay({ image }: { image: string | StaticImageData }) {
     return (
-        <div className="bg-second-20 border-first-90 mx-auto flex h-[320px] w-full overflow-hidden rounded-xl rounded-b-none border-2 border-b-0 pt-[24px] md:h-[400px] lg:h-[560px] lg:w-[350px] lg:rounded-b-xl lg:border-b-2 lg:pt-0 xl:w-[432px]">
+        <div className="bg-second-20 border-first-90 mx-auto flex h-[320px] w-full overflow-hidden rounded-xl rounded-b-none border-2 border-b-0 pt-[24px] md:h-[400px] lg:h-[560px] lg:w-[350px] lg:rounded-b-xl lg:border-b-2 lg:pt-0 xl:w-[422px] 2xl:w-[432px]">
             <div className="m-auto">
                 <CaseStudyImage src={image} alt="" />
             </div>

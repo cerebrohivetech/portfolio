@@ -4,7 +4,7 @@ import CaseImage from "@/assets/images/project-display.png";
 
 export default function Portfolio() {
     return (
-        <section className="shadow-xl shadow-[#10182840] bg-[url('/bg-image.svg')] px-[20px] py-[56px] text-white lg:px-[70px] lg:py-[70px] xl:px-[100px] xl:py-[88px] mb-30">
+        <section className="bg-[url('/bg-image.svg')] px-[20px] py-[56px] text-white shadow-xl shadow-[#10182840] lg:px-[70px] lg:py-[70px] xl:px-[100px] xl:py-[88px]">
             <Brands />
 
             <div className="flex flex-col gap-[64px]">
