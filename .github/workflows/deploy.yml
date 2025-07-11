@@ -31,4 +31,4 @@ jobs:
         uses: actions/deploy-pages@v4
         with:
           path: out
-          name: github-pages # This must exactly match the name used for download
+          artifact_name: github-pages # This must exactly match the name used for download
