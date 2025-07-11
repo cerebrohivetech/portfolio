@@ -27,6 +27,12 @@ jobs:
       - name: Build and export
         run: npm run export
 
+      - name: Download GitHub Pages artifact
+        uses: actions/download-artifact@v4 # Ensure you're using v4 or later
+        with:
+          name: github-pages # This must exactly match the name used for upload
+          path: out
+
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
         with:
