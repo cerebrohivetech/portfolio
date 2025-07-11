@@ -5,6 +5,10 @@ on:
     branches:
       - master # Replace with your default branch
 
+permissions:
+  id-token: write 
+  contents: read
+  
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
