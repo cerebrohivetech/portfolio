@@ -5,4 +5,4 @@ export * from "./cards";
 export * from "./landing-page";
 export * from "./forms";
 export * from "./footer";
-export * from "./about-page"
+export * from "./about-page";

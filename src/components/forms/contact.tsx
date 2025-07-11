@@ -26,7 +26,7 @@ export default function ContactPageForm() {
                     name="message"
                     placeholder="Tell us more about the project"
                 />
-                
+
                 <Button text="Send a message" variant="normal" type="submit" />
             </ContactForm>
         </Section>

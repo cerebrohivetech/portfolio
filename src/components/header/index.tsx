@@ -41,7 +41,11 @@ export function Header() {
                         <Link href="contact">Contact us</Link>
                     </li>
                 </ul>
-                <Button text="Get a quote" variant="standard" link="/get_quote" />
+                <Button
+                    text="Get a quote"
+                    variant="standard"
+                    link="/get_quote"
+                />
             </nav>
             <button
                 type="button"
@@ -60,7 +64,7 @@ function MobileMenu({ showNav }: { showNav: boolean }) {
 
     return (
         <nav
-            className={`shadow-second-70/[25%] ${showNav ? "absolute" : "hidden"} inset-x-0 inset-y-[98px] flex h-[200px] w-full items-start justify-between bg-white px-[40px] py-[40px] shadow-sm md:hidden z-50`}
+            className={`shadow-second-70/[25%] ${showNav ? "absolute" : "hidden"} inset-x-0 inset-y-[98px] z-50 flex h-[200px] w-full items-start justify-between bg-white px-[40px] py-[40px] shadow-sm md:hidden`}
         >
             <ul className="items-center md:flex">
                 <li className={className}>
