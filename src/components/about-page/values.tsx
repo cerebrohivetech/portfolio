@@ -8,7 +8,8 @@ const inter = Inter({
 });
 
 export function Values() {
-    const className = "mb-[32px] text-sm/snug lg:text-lg/[1.875rem] text-second-110 font-normal";
+    const className =
+        "mb-[32px] text-sm/snug lg:text-lg/[1.875rem] text-second-110 font-normal";
     const h1ClassName = "mb-[16px] md:mb-[40px] md:text-[2.5rem]/normal";
     const pClassName = `${inter.className} uppercase text-[0.6875rem]/[1rem] md:text-[0.875rem]/[1.125rem] lg:text-[1.125rem]/[100%] text-second-90`;
 

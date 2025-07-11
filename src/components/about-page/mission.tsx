@@ -5,7 +5,7 @@ import Button from "../button";
 
 export function Mission() {
     const className =
-        "xl:w-[608px] sm:w-[500px] md:w-full xl:h-[60px] mb-[32px] text-sm/snug lg:text-lg/[1.875rem] text-second-110 font-normal";
+        "xl:w-[450px] sm:w-[500px] md:w-full 2xl:h-[60px] mb-[32px] 2xl:w-[608px] text-sm/snug lg:text-lg/[1.875rem] text-second-110 font-normal";
     return (
         <Section>
             <div className="mb-[24px] md:mb-[64px]">
