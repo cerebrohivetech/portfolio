@@ -5,10 +5,12 @@ import Link from "next/link";
 import Logo from "@/assets/svg/cerebro-hive-logo.svg";
 import Menu from "@/assets/svg/menu.svg";
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 import Button from "../button";
 
 export function Header() {
     const [showNav, setShowNav] = useState(false);
+    const pathname = usePathname();
 
     function handleShowNav() {
         setShowNav((prevNav) => !prevNav);
@@ -25,20 +27,30 @@ export function Header() {
             {showNav && <MobileMenu showNav={showNav} />}
             <nav className="hidden md:flex md:h-0 md:w-full md:items-center md:justify-end md:bg-transparent md:py-0 md:shadow-none">
                 <ul className="items-center md:flex">
-                    <li className="text-second-70 mr-[30px] text-xs font-[400] lg:text-base">
+                    <li
+                        className={`text-second-70 mr-[30px] text-xs font-[400] transition-all duration-150 lg:text-base ${pathname === "/about" && "!text-first-60 border-first-60 border-b-2"}`}
+                    >
                         <Link href="/about">About us</Link>
                     </li>
-                    <li className="text-second-70 mr-[30px] text-xs font-[400] lg:text-base">
+                    <li
+                        className={`text-second-70 mr-[30px] text-xs font-[400] transition-all duration-150 lg:text-base ${pathname === "/portfolio" && "!text-first-60 border-first-60 border-b-2"}`}
+                    >
                         <Link href="/portfolio">Portfolio</Link>
                     </li>
-                    <li className="text-second-70 mr-[30px] text-xs font-[400] lg:text-base">
+                    <li
+                        className={`text-second-70 mr-[30px] text-xs font-[400] transition-all duration-150 lg:text-base ${pathname === "/products" && "!text-first-60 border-first-60 border-b-2"}`}
+                    >
                         <Link href="/products">Our Products</Link>
                     </li>
-                    <li className="text-second-70 mr-[30px] text-xs font-[400] lg:text-base">
+                    <li
+                        className={`text-second-70 mr-[30px] text-xs font-[400] transition-all duration-150 lg:text-base ${pathname === "/blog" && "!text-first-60 border-first-60 border-b-2"}`}
+                    >
                         <Link href="/blog">Blog</Link>
                     </li>
-                    <li className="text-second-70 mr-[30px] text-xs font-[400] lg:text-base">
-                        <Link href="contact">Contact us</Link>
+                    <li
+                        className={`text-second-70 mr-[30px] text-xs font-[400] transition-all duration-150 lg:text-base ${pathname === "/contact" && "!text-first-60 border-first-60 border-b-2"}`}
+                    >
+                        <Link href="/contact">Contact us</Link>
                     </li>
                 </ul>
                 <Button

@@ -1,5 +1,5 @@
-import Button from "../button";
-import { Section } from "../elements";
+import Button from "../../button";
+import { Section } from "../../elements";
 import RightArrowicon from "@/assets/svg/ep_top-right.svg";
 import { Inter } from "next/font/google";
 

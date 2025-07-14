@@ -1,5 +1,5 @@
 import { StaticImageData } from "next/image";
-import { Section } from "../elements";
+import { Section } from "../../elements";
 
 export default function Team() {
     const className = "md:w-[292px] 2xl:w-[292px] lg:w-[250px] max-w-[350px]";

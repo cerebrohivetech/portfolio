@@ -24,7 +24,7 @@ export default function Product(props: ProductProp) {
                     text="View case study"
                     icon={TPIcon}
                     variant="normal"
-                    link="/"
+                    link="/portfolio/jackobian"
                 />
             </div>
             <div className="flex flex-col gap-[24px] md:flex-row">

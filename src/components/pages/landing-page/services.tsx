@@ -1,5 +1,5 @@
-import { ServiceCard } from "../cards";
-import { Section } from "../elements";
+import { ServiceCard } from "../../cards";
+import { Section } from "../../elements";
 
 export default function Service() {
     return (

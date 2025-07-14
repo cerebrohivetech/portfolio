@@ -1,5 +1,5 @@
-import Button from "../button";
-import { Section } from "../elements";
+import Button from "../../button";
+import { Section } from "../../elements";
 import { Inter } from "next/font/google";
 
 const inter = Inter({

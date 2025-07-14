@@ -1,5 +1,5 @@
-import Button from "../button";
-import { Section } from "../elements";
+import Button from "../../button";
+import { Section } from "../../elements";
 import RightArrowIcon from "@/assets/svg/ep_top-right.svg";
 
 export function PlayBook() {

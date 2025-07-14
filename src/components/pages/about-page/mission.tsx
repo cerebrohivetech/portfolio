@@ -1,7 +1,7 @@
 import Image from "next/image";
-import { Section } from "../elements";
+import { Section } from "../../elements";
 import CerebroLogo from "@/assets/svg/cerebro.svg";
-import Button from "../button";
+import Button from "../../button";
 
 export function Mission() {
     const className =
