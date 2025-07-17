@@ -1,4 +1,4 @@
-import { Section } from "@/components/elements";
+import { PortfolioSlugHero, PortfolioSlugMain } from "@/components";
 
 export default async function Page({
     params,
@@ -7,8 +7,9 @@ export default async function Page({
 }) {
     const { slug } = await params;
     return (
-        <Section>
-            <h1>{slug} </h1>
-        </Section>
+        <main>
+            <PortfolioSlugHero title={slug} />
+            <PortfolioSlugMain />
+        </main>
     );
 }

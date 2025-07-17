@@ -36,9 +36,17 @@ export default function Product(props: ProductProp) {
     );
 }
 
-function CaseStudyDisplay({ image }: { image: string | StaticImageData }) {
+export function CaseStudyDisplay({
+    image,
+    className,
+}: {
+    image: string | StaticImageData;
+    className?: string;
+}) {
     return (
-        <div className="bg-second-20 border-first-90 mx-auto flex h-[320px] w-full overflow-hidden rounded-xl rounded-b-none border-2 border-b-0 pt-[24px] md:h-[400px] lg:h-[560px] lg:w-[350px] lg:rounded-b-xl lg:border-b-2 lg:pt-0 xl:w-[422px] 2xl:w-[432px]">
+        <div
+            className={`${className} bg-second-20 border-first-90 mx-auto flex h-[320px] w-full overflow-hidden rounded-xl rounded-b-none border-2 border-b-0 pt-[24px] md:h-[400px] lg:h-[560px] lg:w-[350px] lg:rounded-b-xl lg:border-b-2 lg:pt-0 xl:w-[422px] 2xl:w-[432px]`}
+        >
             <div className="m-auto">
                 <CaseStudyImage src={image} alt="" />
             </div>

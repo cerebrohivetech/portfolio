@@ -2,8 +2,6 @@ export * from "./button";
 export * from "./header";
 export * from "./hero-section";
 export * from "./cards";
-export * from "./pages/landing-page";
+export * from './pages'
 export * from "./forms";
 export * from "./footer";
-export * from "./pages/about-page";
-export * from "./pages/portfolio-page";
