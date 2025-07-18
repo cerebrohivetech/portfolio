@@ -19,7 +19,7 @@ function ProductItem() {
         <div>
             <div className="mb-[24px]">
                 <h2>Jackobian Readers&apos; App</h2>
-                <span className="text-first-30 text-xs/[1rem] md:text-base lg:text-xl/normal font-semibold">
+                <span className="text-first-30 text-xs/[1rem] font-semibold md:text-base lg:text-xl/normal">
                     Category: Edtech
                 </span>
             </div>

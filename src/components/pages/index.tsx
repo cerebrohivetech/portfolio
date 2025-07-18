@@ -4,3 +4,4 @@ export { ProductListing };
 export * from "./about-page";
 export * from "./landing-page";
 export * from "./portfolio-page";
+export * from "./blog-page";

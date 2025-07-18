@@ -11,7 +11,7 @@ export default function ProductHero() {
                         Products and solutions that scale
                     </h1>
                     <div className="flex flex-col items-start gap-[24px] md:gap-[32px]">
-                        <p className="w-full sm:w-[335px] text-sm/[1.375rem] font-normal sm:text-base md:text-[1.125rem]/[1.875rem] lg:w-[413px] 2xl:w-[490px]">
+                        <p className="w-full text-sm/[1.375rem] font-normal sm:w-[335px] sm:text-base md:text-[1.125rem]/[1.875rem] lg:w-[413px] 2xl:w-[490px]">
                             We are the perfect software and hardware technology
                             outsourcing firm for businesses solving problems
                             within the African space.

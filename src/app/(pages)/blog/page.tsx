@@ -1,9 +1,10 @@
-import { Section } from "@/components/elements";
-
+import { BlogHero, Blogs } from "@/components";
 
 export default function BlogPage() {
-
     return (
-        <Section>Hello</Section>
-    )
+        <main>
+            <BlogHero />
+            <Blogs />
+        </main>
+    );
 }
