@@ -10,7 +10,7 @@ import Link from "next/link";
 
 export function BlogDetail() {
     return (
-        <Section>
+        <Section className="bg-[url('/bg-image.svg')]">
             <div className="mb-10 md:mb-15 xl:mb-20">
                 <div className="mb-[32px] flex flex-col justify-between gap-[16px] md:flex-row md:gap-0">
                     <p className="text-second-110 text-sm/snug font-normal md:text-base lg:text-lg/loose xl:w-[600px]">
