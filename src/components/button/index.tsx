@@ -6,7 +6,7 @@ type ButtonProp = {
     icon?: string;
     link?: string;
     type?: "submit" | "button";
-    className?: string
+    className?: string;
 };
 
 export default function Button(props: ButtonProp) {
@@ -16,7 +16,7 @@ export default function Button(props: ButtonProp) {
         <Link href={link}>
             <button
                 type="button"
-                className={`${className? className: ''} bg-first-60 flex items-center gap-1 ${variant === "standard" && "btn-shadow border-first-40 border-[1px]"} rounded-sm px-[14px] py-[10px] text-sm font-semibold text-white`}
+                className={`${className ? className : ""} bg-first-60 flex items-center gap-1 ${variant === "standard" && "btn-shadow border-first-40 border-[1px]"} rounded-sm px-[14px] py-[10px] text-sm font-semibold text-white`}
             >
                 {icon && <Image src={icon} alt="" />}
                 {text}

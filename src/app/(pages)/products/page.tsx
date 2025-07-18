@@ -1,9 +1,10 @@
-import { ProductHero } from "@/components";
+import { ProductHero, ProductListing } from "@/components";
 
 export default function ProductPage() {
     return (
         <main>
             <ProductHero />
+            <ProductListing />
         </main>
     );
 }

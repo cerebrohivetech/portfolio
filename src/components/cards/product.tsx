@@ -39,17 +39,22 @@ export default function Product(props: ProductProp) {
 export function CaseStudyDisplay({
     image,
     className,
+    isBlur,
 }: {
     image: string | StaticImageData;
     className?: string;
+    isBlur?: boolean;
 }) {
     return (
         <div
-            className={`${className} bg-second-20 border-first-90 mx-auto flex h-[320px] w-full overflow-hidden rounded-xl rounded-b-none border-2 border-b-0 pt-[24px] md:h-[400px] lg:h-[560px] lg:w-[350px] lg:rounded-b-xl lg:border-b-2 lg:pt-0 xl:w-[422px] 2xl:w-[432px]`}
+            className={`${className} bg-second-20 border-first-90 relative mx-auto flex h-[320px] w-full overflow-hidden rounded-xl rounded-b-none border-2 border-b-0 pt-[24px] md:h-[400px] lg:h-[560px] lg:w-[350px] lg:rounded-b-xl lg:border-b-2 lg:pt-0 xl:w-[422px] 2xl:w-[432px]`}
         >
-            <div className="m-auto">
+            <div className="z-10 m-auto">
                 <CaseStudyImage src={image} alt="" />
             </div>
+            {isBlur && (
+                <div className="bg-second-110/80 absolute inset-x-[42%] inset-y-[30%] z-0 h-[200px] w-[200px] rounded-full blur-[364px]"></div>
+            )}
         </div>
     );
 }
