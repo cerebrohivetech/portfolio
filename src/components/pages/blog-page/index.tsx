@@ -54,7 +54,7 @@ type PublisherProp = {
     date: string;
     img?: string | StaticImageData;
 };
-function Publisher(props: PublisherProp) {
+export function Publisher(props: PublisherProp) {
     const { name, date, img } = props;
 
     return (
@@ -79,7 +79,7 @@ function Publisher(props: PublisherProp) {
 }
 
 // other blogs
-function BlogList() {
+export function BlogList() {
     return (
         <div>
             <h2 className="mb-6">Other posts</h2>
@@ -100,7 +100,7 @@ function BlogItem() {
         <div className="relative w-full 2xl:w-[386px]">
             <CaseStudyDisplay
                 image={CaseImage}
-                className="!md:h-[420px] !w-full !pt-[24px]"
+                className="md:!h-[420px] !w-full !pt-[24px]"
             />
             <div className="mt-5">
                 <h3 className="mb-3">Feature 1</h3>
@@ -121,3 +121,5 @@ function BlogItem() {
         </div>
     );
 }
+
+export * from "./blog-slug";

@@ -1,4 +1,4 @@
-import { PortfolioSlugHero, PortfolioSlugMain } from "@/components";
+import { BlogDetail, BlogSlugHero } from "@/components";
 
 export default async function Page({
     params,
@@ -6,10 +6,11 @@ export default async function Page({
     params: Promise<{ slug: string }>;
 }) {
     const { slug } = await params;
+    console.log(slug);
     return (
         <main>
-            <PortfolioSlugHero title={slug} />
-            <PortfolioSlugMain />
+            <BlogSlugHero />
+            <BlogDetail />
         </main>
     );
 }
