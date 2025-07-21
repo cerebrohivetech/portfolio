@@ -1,5 +1,11 @@
 import { BlogDetail, BlogSlugHero } from "@/components";
 
+export async function generateStaticParams() {
+    const slugs = ["blog1"];
+
+    return slugs.map((slug) => ({ slug }));
+}
+
 export default async function Page({
     params,
 }: {
