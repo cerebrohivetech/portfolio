@@ -1,7 +1,7 @@
-import { Brands } from "../cards";
-import Product from "../cards/product";
+import { Brands } from "../../cards";
+import Product from "../../cards/product";
 import CaseImage from "@/assets/images/project-display.png";
-import { Section } from "../elements";
+import { Section } from "../../elements";
 
 export default function Portfolio() {
     return (

@@ -1,4 +1,11 @@
-import { AboutHero, Mission, PlayBook, Services, Values } from "@/components";
+import {
+    AboutHero,
+    Mission,
+    PlayBook,
+    Services,
+    Team,
+    Values,
+} from "@/components";
 
 export default function AboutPage() {
     return (
@@ -8,6 +15,7 @@ export default function AboutPage() {
             <Values />
             <PlayBook />
             <Services />
+            <Team />
         </main>
     );
 }

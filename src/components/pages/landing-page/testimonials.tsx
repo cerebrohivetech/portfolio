@@ -3,7 +3,7 @@
 import Image, { StaticImageData } from "next/image";
 import { useState } from "react";
 import { Testimonials } from "@/lib/dummyData";
-import { Section } from "../elements";
+import { Section } from "../../elements";
 
 type TestimonyProp = {
     description: string;
