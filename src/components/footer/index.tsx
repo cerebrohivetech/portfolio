@@ -9,7 +9,7 @@ export function Footer() {
     return (
         <Section className="relative !pb-0">
             <div className="mb-[40px] flex flex-col gap-[24px] sm:flex-row sm:items-center sm:justify-between">
-                <div className="w-[251px] xl:w-[290px]">
+                <div className="w-[251px] xl:w-[300px]">
                     <h3>Cerebrohive Technologies</h3>
                     <p className="text-second-110 my-[24px] text-sm/snug font-normal xl:text-base/normal">
                         Software outsourcing company based in Nigeria
@@ -52,16 +52,16 @@ function Navbar() {
         <nav>
             <ul className="flex flex-col gap-[16px] sm:flex-row xl:gap-[30px]">
                 <li className={className}>
-                    <Link href="">Services</Link>
+                    <Link href="/about">Services</Link>
                 </li>
                 <li className={className}>
-                    <Link href="">Portfolio</Link>
+                    <Link href="/portfolio">Portfolio</Link>
                 </li>
                 <li className={className}>
-                    <Link href="">Contact us</Link>
+                    <Link href="/contact">Contact us</Link>
                 </li>
                 <li className={className}>
-                    <Link href="/get_qoute">Leave a qoute</Link>
+                    <Link href="/get_quote">Leave a qoute</Link>
                 </li>
             </ul>
         </nav>
