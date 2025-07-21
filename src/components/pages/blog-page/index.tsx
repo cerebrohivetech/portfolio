@@ -100,7 +100,7 @@ function BlogItem() {
         <div className="relative w-full 2xl:w-[386px]">
             <CaseStudyDisplay
                 image={CaseImage}
-                className="md:!h-[420px] !w-full !pt-[24px]"
+                className="!w-full !pt-[24px] md:!h-[420px]"
             />
             <div className="mt-5">
                 <h3 className="mb-3">Feature 1</h3>
