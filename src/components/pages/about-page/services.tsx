@@ -60,7 +60,7 @@ function IndividualService(props: ServiceProp) {
         <div>
             <h2 className="mb-[24px]">{title}</h2>
 
-            <div className="mb-[24px] flex flex-col gap-[24px] text-sm/snug text-[#E3E1E1] md:flex-row lg:gap-[40px] lg:text-xl/[2.35rem] [&>p]:w-full md:[&>p]:w-[580px]">
+            <div className="mb-[24px] flex flex-col gap-[24px] text-sm/snug justify-between text-[#E3E1E1] md:flex-row lg:gap-[40px] lg:text-xl/[2.35rem] [&>p]:w-full md:[&>p]:w-[580px]">
                 <p>{firstParagraph}</p>
                 <p>{secondParagraph}</p>
             </div>
