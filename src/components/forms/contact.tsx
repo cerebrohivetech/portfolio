@@ -7,7 +7,7 @@ import ContactForm from "./form";
 
 export default function ContactPageForm() {
     return (
-        <Section className="flex flex-col bg-[url('/bg-image.svg')] md:flex-row md:gap-[47px] xl:gap-[67px]">
+        <Section className="flex flex-col bg-[url('/bg-image.svg')] justify-between md:flex-row md:gap-[47px] xl:gap-[67px]">
             <h2 className="mb-[32px] h-[56px] w-[194px] sm:w-full md:w-[220px] xl:h-[132px] xl:w-[292px]">
                 Contact us
             </h2>

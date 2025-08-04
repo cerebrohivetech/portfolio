@@ -52,7 +52,7 @@ function Navbar() {
         <nav>
             <ul className="flex flex-col gap-[16px] sm:flex-row xl:gap-[30px]">
                 <li className={className}>
-                    <Link href="/about">Services</Link>
+                    <Link href="/#services">Services</Link>
                 </li>
                 <li className={className}>
                     <Link href="/portfolio">Portfolio</Link>
@@ -61,7 +61,7 @@ function Navbar() {
                     <Link href="/contact">Contact us</Link>
                 </li>
                 <li className={className}>
-                    <Link href="/get_quote">Leave a qoute</Link>
+                    <Link href="/get_quote">Get a quote</Link>
                 </li>
             </ul>
         </nav>
