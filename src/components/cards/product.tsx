@@ -3,6 +3,7 @@ import Image from "next/image";
 import TPIcon from "@/assets/svg/ep_top-right.svg";
 import PhoneFrame from "@/assets/images/phone-display.png";
 import type { StaticImageData } from "next/image";
+import { motion } from "framer-motion";
 
 type ProductProp = {
     title: string;
@@ -27,11 +28,18 @@ export default function Product(props: ProductProp) {
                     link="/portfolio/jackobian"
                 />
             </div>
-            <div className="flex flex-col gap-[24px] md:flex-row">
+            <motion.div
+                className="flex flex-col gap-[24px] md:flex-row"
+                initial={{ x: -60, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                transition={{
+                    duration: 0.8,
+                }}
+            >
                 <CaseStudyDisplay image={images[0]} />
 
                 <CaseStudyDisplay image={images[1]} />
-            </div>
+            </motion.div>
         </section>
     );
 }

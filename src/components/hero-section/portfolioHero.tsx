@@ -1,11 +1,19 @@
 import Button from "../button";
 import { Companies } from "../cards";
 import { Hero } from "../elements";
+import { motion } from "framer-motion";
 
 export default function PortfolioHero() {
     return (
         <Hero className="text-second-10">
-            <div className="px-[20px] pt-[32px] pb-[48px] sm:px-[40px] md:px-[50px] md:pt-[96px] md:pb-[80px] lg:px-[100px]">
+            <motion.div
+                className="px-[20px] pt-[32px] pb-[48px] sm:px-[40px] md:px-[50px] md:pt-[96px] md:pb-[80px] lg:px-[100px]"
+                initial={{ x: -60, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                transition={{
+                    duration: 0.8,
+                }}
+            >
                 <div className="mb-[30px] flex flex-col gap-[24px] md:mb-[45px] md:gap-[30px] lg:flex-row lg:gap-[50px] xl:mb-[54px] xl:gap-[80px]">
                     <h1 className="text-second-10 font-semibold">
                         Tech solutions accross various industries
@@ -29,7 +37,7 @@ export default function PortfolioHero() {
                     </p>
                     <Companies />
                 </div>
-            </div>
+            </motion.div>
         </Hero>
     );
 }

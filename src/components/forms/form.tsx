@@ -1,4 +1,5 @@
 import { ReactNode } from "react";
+import { motion } from "framer-motion";
 
 type FormProp = {
     children: ReactNode;
@@ -10,7 +11,14 @@ export default function ContactForm(props: FormProp) {
     const { children, title, onSubmit } = props;
 
     return (
-        <div className="relative md:w-[600px] lg:w-[770px]">
+        <motion.div
+            className="relative md:w-[600px] lg:w-[770px]"
+            initial={{ x: -60, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{
+                duration: 0.8,
+            }}
+        >
             <p className="text-second-110 mb-[24px] text-base/normal font-normal xl:mb-10 xl:h-[30px] xl:text-[1.125rem]/[1.875rem]">
                 {title}
             </p>
@@ -22,6 +30,6 @@ export default function ContactForm(props: FormProp) {
             >
                 {children}
             </form>
-        </div>
+        </motion.div>
     );
 }

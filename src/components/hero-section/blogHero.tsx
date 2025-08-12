@@ -1,9 +1,17 @@
 import { Hero } from "../elements";
+import { motion } from "framer-motion";
 
 export default function BlogHero() {
     return (
         <Hero className="text-second-10">
-            <div className="px-[20px] pt-[32px] pb-[30px] sm:px-[40px] sm:pb-[48px] md:px-[50px] md:pt-[96px] md:pb-[80px] lg:px-[100px]">
+            <motion.div
+                className="px-[20px] pt-[32px] pb-[30px] sm:px-[40px] sm:pb-[48px] md:px-[50px] md:pt-[96px] md:pb-[80px] lg:px-[100px]"
+                initial={{ x: -60, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                transition={{
+                    duration: 0.8,
+                }}
+            >
                 <p className="text-first-60 mb-[8px] text-xs/[1rem] font-semibold md:mb-[12px] md:text-xl/normal">
                     Building products that scale
                 </p>
@@ -15,7 +23,7 @@ export default function BlogHero() {
                     have helped countless businesses and hey! We have a gist
                     corner.
                 </p>
-            </div>
+            </motion.div>
         </Hero>
     );
 }

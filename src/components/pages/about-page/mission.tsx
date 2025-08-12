@@ -14,7 +14,7 @@ export function Mission() {
                 </p>
                 <h2>Our mission</h2>
             </div>
-            <div className="relative flex flex-col-reverse gap-[40px] md:flex-row md:gap-[60px] justify-between lg:gap-[80px] xl:gap-[144px]">
+            <div className="relative flex flex-col-reverse justify-between gap-[40px] md:flex-row md:gap-[60px] lg:gap-[80px] xl:gap-[144px]">
                 <div className="relative w-full md:-top-[60px] md:h-[474px] md:w-[350px] md:shrink-0 lg:top-0 lg:w-[488px]">
                     <Image
                         src={CerebroLogo}
