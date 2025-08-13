@@ -3,7 +3,7 @@ import { ReactNode } from "react";
 export function Section({
     children,
     className,
-    id
+    id,
 }: {
     children: ReactNode;
     className?: string;
@@ -16,6 +16,25 @@ export function Section({
         >
             {children}
         </section>
+    );
+}
+
+export function FooterSection({
+    children,
+    className,
+    id,
+}: {
+    children: ReactNode;
+    className?: string;
+    id?: string;
+}) {
+    return (
+        <footer
+            id={id}
+            className={`px-[20px] py-[40px] text-white md:px-[40px] md:py-[80px] xl:px-[100px] ${className ? className : ""}`}
+        >
+            {children}
+        </footer>
     );
 }
 

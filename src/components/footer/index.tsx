@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Section } from "../elements";
+import { FooterSection } from "../elements";
 import Image, { StaticImageData } from "next/image";
 import XLogo from "@/assets/svg/simple-icons_x.svg";
 import MailLogo from "@/assets/svg/tabler_mail.svg";
@@ -7,7 +7,7 @@ import LinkedInLogo from "@/assets/svg/mingcute_linkedin-line.svg";
 
 export function Footer() {
     return (
-        <Section className="relative !pb-0">
+        <FooterSection className="relative !pb-0">
             <div className="mb-[40px] flex flex-col gap-[24px] sm:flex-row sm:items-center sm:justify-between">
                 <div className="w-[251px] xl:w-[300px]">
                     <h3>Cerebrohive Technologies</h3>
@@ -33,7 +33,7 @@ export function Footer() {
                     2024{" "}
                 </p>
             </div>
-        </Section>
+        </FooterSection>
     );
 }
 

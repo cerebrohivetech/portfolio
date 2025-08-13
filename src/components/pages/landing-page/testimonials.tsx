@@ -4,6 +4,7 @@ import Image, { StaticImageData } from "next/image";
 import { useState } from "react";
 import { Testimonials } from "@/lib/dummyData";
 import { Section } from "../../elements";
+import { motion } from "framer-motion";
 
 type TestimonyProp = {
     description: string;
@@ -23,7 +24,14 @@ export default function Testimonial() {
             <h2 className="relative ml-[8px] sm:ml-0 md:top-4 md:w-[292px] xl:-top-12 xl:h-[132px] xl:w-[292px]">
                 What our clients are saying
             </h2>
-            <div className="relative overflow-hidden rounded-lg lg:w-[80%] xl:h-[310px] 2xl:w-[888px]">
+            <motion.div
+                className="relative overflow-hidden rounded-lg lg:w-[80%] xl:h-[310px] 2xl:w-[888px]"
+                initial={{ x: -60, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                transition={{
+                    duration: 0.8,
+                }}
+            >
                 <div
                     className="flex transition-transform duration-700 ease-in-out"
                     style={{ transform: `translateX(-${currentPage * 100}%)` }}
@@ -59,7 +67,7 @@ export default function Testimonial() {
                         ></button>
                     ))}
                 </div>
-            </div>
+            </motion.div>
         </Section>
     );
 }
