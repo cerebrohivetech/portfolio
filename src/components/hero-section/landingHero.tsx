@@ -5,10 +5,10 @@ import { motion } from "framer-motion";
 
 export default function LandingHero() {
     return (
-        <Hero className="relative !bg-black text-left md:text-center">
-            <div className="px-5 pt-[32px] pb-[88px] sm:pt-[40px] md:pt-[60px] lg:pt-[80px] xl:pt-[128px] xl:pb-[124px]">
+        <Hero className="relative bg-[url('/matrix_1.png')] text-left md:text-center">
+            <div className="px-5 pt-[32px] pb-[88px] sm:pt-[40px] md:pt-[60px] lg:pt-[80px] xl:pt-[128px] xl:pb-[124px] z-0">
                 <motion.div
-                    className="relative z-1 mx-auto flex w-full flex-col items-start justify-center bg-transparent md:w-[654px] md:items-center"
+                    className="relative z-10 mx-auto flex w-full flex-col items-start justify-center bg-transparent md:w-[654px] md:items-center"
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{
@@ -32,16 +32,16 @@ export default function LandingHero() {
                         />
                     </div>
                 </motion.div>
-                <div className="absolute top-0 left-0 z-0 h-full w-full">
+                {/* <div className="absolute top-0 left-0 z-0 h-full w-full">
                     <video
-                        src="/videos/falling_binary.webm"
+                        src="/videos/falling_binary.mp4"
                         autoPlay
                         muted
                         loop
                         playsInline
                         className="h-full w-full"
                     ></video>
-                </div>
+                </div> */}
             </div>
         </Hero>
     );
