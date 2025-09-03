@@ -1,6 +1,6 @@
 import Brands from "./brands";
+import Product from "./product";
 
-export { Brands };
+export { Brands, Product };
 export * from "./services";
-export * from "./product";
 export * from "./brands";
