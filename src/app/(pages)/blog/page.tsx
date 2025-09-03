@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { BlogHero, Blogs } from "@/components";
 

@@ -116,7 +116,6 @@ function MobileMenu({
                 console.log("Clicked outside!");
             }
         }
-        
 
         document.addEventListener("mousedown", handleClickOutside);
 
@@ -133,7 +132,7 @@ function MobileMenu({
                 duration: 0.3,
             }}
             ref={navRef}
-            className={`shadow-second-70/[25%] ${showNav ? "absolute" : "hidden"} inset-x-0 inset-y-[98px] z-50 flex flex-col h-[250px] gap-2 w-full items-start justify-between bg-white px-[40px] py-[40px] shadow-sm md:hidden`}
+            className={`shadow-second-70/[25%] ${showNav ? "absolute" : "hidden"} inset-x-0 inset-y-[98px] z-50 flex h-[250px] w-full flex-col items-start justify-between gap-2 bg-white px-[40px] py-[40px] shadow-sm md:hidden`}
         >
             <ul className="items-center md:flex">
                 <li className={className}>

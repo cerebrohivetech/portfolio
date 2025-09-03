@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 export default function LandingHero() {
     return (
         <Hero className="relative text-left md:text-center">
-            <div className="px-5 pt-[32px] pb-[88px] sm:pt-[40px] bg-[url('/code_bg.png')] bg-cover md:pt-[60px] lg:pt-[80px] xl:pt-[128px] xl:pb-[124px] z-0">
+            <div className="z-0 bg-[url('/code_bg.png')] bg-cover px-5 pt-[32px] pb-[88px] sm:pt-[40px] md:pt-[60px] lg:pt-[80px] xl:pt-[128px] xl:pb-[124px]">
                 <motion.div
                     className="relative z-10 mx-auto flex w-full flex-col items-start justify-center md:w-[654px] md:items-center"
                     initial={{ opacity: 0, y: 20 }}

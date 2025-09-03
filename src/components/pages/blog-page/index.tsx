@@ -5,6 +5,7 @@ import { Section } from "@/components/elements";
 import Image, { StaticImageData } from "next/image";
 import ProfileImage from "@/assets/images/profile2.png";
 import Link from "next/link";
+import { BlogDetail, BlogSlugHero } from "./blog-slug";
 
 export function Blogs() {
     return (
@@ -122,4 +123,4 @@ function BlogItem() {
     );
 }
 
-export * from "./blog-slug";
+export { BlogDetail, BlogSlugHero };
