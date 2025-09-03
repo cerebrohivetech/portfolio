@@ -1,3 +1,5 @@
+"use client"
+
 import { CaseStudyDisplay } from "@/components/cards";
 import { Section } from "@/components/elements";
 import CaseImage from "@/assets/images/project-display.png";

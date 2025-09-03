@@ -1,4 +1,5 @@
-// import Link from "next/link";
+"use client"
+
 import { Hero } from "../../../elements";
 import Image from "next/image";
 import backIcon from "@/assets/svg/ep_back.svg";
