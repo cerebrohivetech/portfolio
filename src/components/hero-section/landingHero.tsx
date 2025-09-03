@@ -5,20 +5,20 @@ import { motion } from "framer-motion";
 
 export default function LandingHero() {
     return (
-        <Hero className="relative bg-[url('/matrix_1.png')] text-left md:text-center">
-            <div className="px-5 pt-[32px] pb-[88px] sm:pt-[40px] md:pt-[60px] lg:pt-[80px] xl:pt-[128px] xl:pb-[124px] z-0">
+        <Hero className="relative text-left md:text-center">
+            <div className="px-5 pt-[32px] pb-[88px] sm:pt-[40px] bg-[url('/code_bg.png')] bg-cover md:pt-[60px] lg:pt-[80px] xl:pt-[128px] xl:pb-[124px] z-0">
                 <motion.div
-                    className="relative z-10 mx-auto flex w-full flex-col items-start justify-center bg-transparent md:w-[654px] md:items-center"
+                    className="relative z-10 mx-auto flex w-full flex-col items-start justify-center md:w-[654px] md:items-center"
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{
                         duration: 0.8,
                     }}
                 >
-                    <h1 className="mb-[32px] font-semibold text-white">
+                    <h1 className="mb-[32px] font-semibold">
                         We build tech solutions for businesses
                     </h1>
-                    <div className="flex flex-col items-start gap-[24px] text-white md:items-center md:gap-[32px]">
+                    <div className="flex flex-col items-start gap-[24px] md:items-center md:gap-[32px]">
                         <p className="w-[335px] text-sm/[1.375rem] font-normal sm:w-[400px] md:w-[450px] md:text-[1.125rem]/[1.875rem] xl:w-[498px] 2xl:w-[490px]">
                             We are the perfect software and hardware technology
                             outsourcing firm for businesses solving problems
@@ -32,16 +32,6 @@ export default function LandingHero() {
                         />
                     </div>
                 </motion.div>
-                {/* <div className="absolute top-0 left-0 z-0 h-full w-full">
-                    <video
-                        src="/videos/falling_binary.mp4"
-                        autoPlay
-                        muted
-                        loop
-                        playsInline
-                        className="h-full w-full"
-                    ></video>
-                </div> */}
             </div>
         </Hero>
     );
