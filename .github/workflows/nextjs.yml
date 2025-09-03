@@ -26,6 +26,7 @@ jobs:
 
       - name: Build static site
         run: |
+          rm -rf .next node_modules package-lock.json yarn.lock
           npm run build
           npm run export
 
