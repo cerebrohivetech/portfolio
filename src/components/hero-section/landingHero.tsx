@@ -1,3 +1,5 @@
+"use client"
+
 import Button from "../button";
 import { Hero } from "../elements";
 import { motion } from "framer-motion";

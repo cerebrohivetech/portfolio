@@ -1,3 +1,5 @@
+"use client"
+
 import Button from "../button";
 import Image from "next/image";
 import TPIcon from "@/assets/svg/ep_top-right.svg";

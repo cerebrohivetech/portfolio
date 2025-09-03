@@ -1,3 +1,5 @@
+"use client"
+
 import Button from "../button";
 import { Companies } from "../cards";
 import { Hero } from "../elements";
