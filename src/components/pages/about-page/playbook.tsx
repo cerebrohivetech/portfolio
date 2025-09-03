@@ -7,7 +7,7 @@ export function PlayBook() {
         "mb-[32px] text-sm/snug lg:text-lg/[1.875rem] text-second-110 font-normal";
 
     return (
-        <Section className="flex flex-col gap-[24px] lg:flex-row lg:gap-20 xl:gap-[144px]">
+        <Section className="flex flex-col justify-between gap-[24px] lg:flex-row lg:gap-20 xl:gap-[144px]">
             <div className="md:w-[488px]">
                 <h2 className="mb-[24px]">Our playbook</h2>
                 <p className={className}>

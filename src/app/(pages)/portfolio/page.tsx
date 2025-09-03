@@ -1,3 +1,5 @@
+"use client";
+
 import { PortfolioHero, ProductList, Testimonies } from "@/components";
 
 export default function Portfolio() {

@@ -3,4 +3,3 @@ import Quote from "./qoute";
 import ContactPageForm from "./contact";
 
 export { ContactForm, Quote, ContactPageForm };
-export * from "./form";

@@ -1,3 +1,5 @@
+"use client";
+
 import { BlogHero, Blogs } from "@/components";
 
 export default function BlogPage() {

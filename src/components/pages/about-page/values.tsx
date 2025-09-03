@@ -14,7 +14,7 @@ export function Values() {
     const pClassName = `${inter.className} uppercase text-[0.6875rem]/[1rem] md:text-[0.875rem]/[1.125rem] lg:text-[1.125rem]/[100%] text-second-90`;
 
     return (
-        <Section className="flex flex-col gap-[64px] bg-[url('/bg-image.svg')] lg:flex-row lg:gap-20 xl:gap-[144px]">
+        <Section className="flex flex-col justify-between gap-[64px] bg-[url('/bg-image.svg')] lg:flex-row lg:gap-20 xl:gap-[144px]">
             <div className="md:w-[488px]">
                 <h2 className="mb-[24px] md:mb-[32px]">Our Values</h2>
 
@@ -42,7 +42,7 @@ export function Values() {
                     link="/get_quote"
                 />
             </div>
-            <div className="flex flex-col gap-[64px] md:gap-[89px]">
+            <div className="flex flex-col gap-[64px] sm:w-[608px] md:gap-[89px]">
                 <div>
                     <h1 className={h1ClassName}>52 products</h1>
                     <p className={pClassName}>shipped and deployed</p>

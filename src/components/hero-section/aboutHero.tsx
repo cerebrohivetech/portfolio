@@ -1,10 +1,20 @@
+"use client";
+
 import { Companies } from "../cards";
 import { Hero } from "../elements";
+import { motion } from "framer-motion";
 
 export default function AboutHero() {
     return (
         <Hero className="text-second-10">
-            <div className="px-[20px] pt-[32px] pb-[48px] sm:px-[40px] md:px-[50px] md:pt-[96px] md:pb-[80px] lg:px-[100px]">
+            <motion.div
+                className="px-[20px] pt-[32px] pb-[48px] sm:px-[40px] md:px-[50px] md:pt-[96px] md:pb-[80px] lg:px-[100px]"
+                initial={{ x: -60, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                transition={{
+                    duration: 0.8,
+                }}
+            >
                 <p className="text-first-60 mb-[8px] text-xs/[1rem] font-semibold md:mb-[12px] md:text-xl/normal">
                     Build, ship, scale
                 </p>
@@ -17,7 +27,7 @@ export default function AboutHero() {
                     </p>
                     <Companies />
                 </div>
-            </div>
+            </motion.div>
         </Hero>
     );
 }

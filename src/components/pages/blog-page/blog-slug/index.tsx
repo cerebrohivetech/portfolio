@@ -1,2 +1,4 @@
-export * from "./hero";
-export * from "./body";
+import { BlogDetail } from "./body";
+import { BlogSlugHero } from "./hero";
+
+export { BlogDetail, BlogSlugHero };
