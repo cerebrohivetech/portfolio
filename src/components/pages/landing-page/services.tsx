@@ -1,3 +1,5 @@
+"use client"
+
 import { ServiceCard } from "../../cards";
 import { Section } from "../../elements";
 import { motion } from "framer-motion";

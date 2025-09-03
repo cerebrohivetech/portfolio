@@ -1,3 +1,5 @@
+"use client"
+
 import Image from "next/image";
 import Link from "next/link";
 import GTBankIcon from "@/assets/svg/GUARANTY Trust Bank - jpeg 0.svg";
