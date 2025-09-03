@@ -1,6 +1,5 @@
-import Brands from "./brands";
-import Product from "./product";
+import Brands, { Companies } from "./brands";
+import Product, { CaseStudyDisplay } from "./product";
+import { ServiceCard } from "./services";
 
-export { Brands, Product };
-export * from "./services";
-export * from "./brands";
+export { Brands, Companies, Product, CaseStudyDisplay, ServiceCard };

@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { CaseStudyDisplay } from "@/components/cards";
 import { Section } from "@/components/elements";

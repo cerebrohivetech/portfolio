@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { Hero } from "../../../elements";
 import Image from "next/image";
