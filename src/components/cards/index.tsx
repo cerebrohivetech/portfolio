@@ -1,3 +1,5 @@
+"use  client"
+
 import Brands, { Companies } from "./brands";
 import Product, { CaseStudyDisplay } from "./product";
 import { ServiceCard } from "./services";
