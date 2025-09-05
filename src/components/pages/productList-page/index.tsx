@@ -1,6 +1,5 @@
 import { CaseStudyDisplay } from "@/components/cards/product";
 import { Section } from "@/components/elements";
-import CaseImage from "@/assets/images/project-display.png";
 import Button from "@/components/button";
 
 export default function ProductListing() {
@@ -25,7 +24,7 @@ function ProductItem() {
             </div>
             <CaseStudyDisplay
                 className="mb-[24px] !w-full"
-                image={CaseImage}
+                image="/images/project-display.png"
                 isBlur={true}
             />
             <div className="mb-[32px] flex flex-col justify-between gap-[16px] md:flex-row md:gap-0">

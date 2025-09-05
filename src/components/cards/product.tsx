@@ -2,8 +2,6 @@
 
 import Button from "../button";
 import Image from "next/image";
-import TPIcon from "@/assets/svg/ep_top-right.svg";
-import PhoneFrame from "@/assets/images/phone-display.png";
 import type { StaticImageData } from "next/image";
 import { motion } from "framer-motion";
 
@@ -25,7 +23,7 @@ export default function Product(props: ProductProp) {
 
                 <Button
                     text="View case study"
-                    icon={TPIcon}
+                    icon="/svg/ep_top-right.svg"
                     variant="normal"
                     link="/portfolio/jackobian"
                 />
@@ -79,7 +77,7 @@ function CaseStudyImage({
     return (
         <div className="align-items-center grid h-[490px] w-[246px] grid-cols-1 grid-rows-1 justify-items-center overflow-hidden rounded-[55px]">
             <Image
-                src={PhoneFrame}
+                src="/images/phone-display.png"
                 alt=""
                 className="z-10 col-start-1 row-start-1 h-full w-full"
             />

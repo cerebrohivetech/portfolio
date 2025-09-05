@@ -2,11 +2,8 @@
 
 import { CaseStudyDisplay } from "@/components/cards";
 import { Section } from "@/components/elements";
-import CaseImage from "@/assets/images/project-display.png";
 import { BlogList } from "..";
 import Image from "next/image";
-import ShareIcon from "@/assets/svg/mdi_share-outline.svg";
-import XIcon from "@/assets/svg/share_x.svg";
 import Link from "next/link";
 
 export function BlogDetail() {
@@ -29,7 +26,7 @@ export function BlogDetail() {
                 </div>
                 <CaseStudyDisplay
                     className="mb-[24px] !w-full"
-                    image={CaseImage}
+                    image="/images/project-display.png"
                     isBlur={true}
                 />
             </div>
@@ -100,14 +97,14 @@ export function BlogDetail() {
                 <div className="flex justify-end gap-2">
                     <Link href="/">
                         <Image
-                            src={ShareIcon}
+                            src="/svg/mdi_share-outline.svg"
                             alt="share post"
                             className="h-10 w-10"
                         />
                     </Link>
                     <Link href="/blog1">
                         <Image
-                            src={XIcon}
+                            src="/svg/share_x.svg"
                             alt="share post"
                             className="h-10 w-10"
                         />

@@ -3,8 +3,6 @@
 import Link from "next/link";
 import { Hero } from "../../../elements";
 import Image from "next/image";
-import arrowIcon from "@/assets/svg/ep_top-right-blue.svg";
-import backIcon from "@/assets/svg/ep_back.svg";
 // import { useRouter } from "next/router";
 
 export default function PortfolioSlugHero({ title }: { title: string }) {
@@ -15,7 +13,7 @@ export default function PortfolioSlugHero({ title }: { title: string }) {
         <Hero className="text-second-10">
             <div className="px-[20px] pt-[32px] pb-[48px] sm:px-[40px] md:px-[50px] md:pt-[96px] md:pb-[80px] lg:px-[100px]">
                 <Image
-                    src={backIcon}
+                    src="/svg/ep_back.svg"
                     alt=""
                     className="mb-6 h-6 w-6 md:mb-[36px]"
                     // onClick={() => router.back()}
@@ -40,7 +38,7 @@ export default function PortfolioSlugHero({ title }: { title: string }) {
                         href=""
                         className="text-first-60 border-first-60 flex items-center gap-1 border-b-2 pb-1 text-[0.6875rem]/[1rem] font-medium uppercase md:gap-2 md:pb-2 lg:text-base/[100%]"
                     >
-                        <Image src={arrowIcon} alt="icon" />
+                        <Image src="/svg/ep_top-right-blue.svg" alt="icon" />
                         Go to site
                     </Link>
                 </div>

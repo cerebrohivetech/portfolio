@@ -1,9 +1,9 @@
 import { Brands } from "../../cards";
 import Product from "../../cards/product";
-import CaseImage from "@/assets/images/project-display.png";
 import { Section } from "../../elements";
 
 export default function Portfolio() {
+    const CaseImage = "/images/project-display.png"
     return (
         <Section className="bg-[url('/bg-image.svg')] text-white shadow-xl shadow-[#10182840]">
             <Brands />

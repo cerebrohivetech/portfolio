@@ -2,8 +2,6 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import Logo from "@/assets/svg/cerebro-hive-logo.svg";
-import Menu from "@/assets/svg/menu.svg";
 import { useEffect, useRef, useState } from "react";
 import { usePathname } from "next/navigation";
 import Button from "../button";
@@ -32,9 +30,11 @@ export function Header() {
             >
                 <Link href="/">
                     <Image
-                        src={Logo}
+                        src="/svg/cerebro-hive-logo.svg"
                         alt="CerebroHive Tech"
                         className="h-[40px] w-[209px] object-cover md:h-[56px] md:w-[208px]"
+                        width={208}
+                        height={56}
                     />
                 </Link>
             </motion.div>
@@ -89,7 +89,7 @@ export function Header() {
                 className="outline-first-30 rounded-sm focus:outline-3 md:hidden"
                 onClick={handleShowNav}
             >
-                <Image src={Menu} alt="" className="h-[34px] w-[34px]" />
+                <Image src="/svg/menu.svg" alt="" className="h-[34px] w-[34px]" />
             </button>
         </header>
     );

@@ -1,9 +1,6 @@
 import Link from "next/link";
 import { FooterSection } from "../elements";
 import Image, { StaticImageData } from "next/image";
-import XLogo from "@/assets/svg/simple-icons_x.svg";
-import MailLogo from "@/assets/svg/tabler_mail.svg";
-import LinkedInLogo from "@/assets/svg/mingcute_linkedin-line.svg";
 
 export function Footer() {
     return (
@@ -16,10 +13,10 @@ export function Footer() {
                     </p>
 
                     <div className="flex gap-[24px]">
-                        <Icon src={XLogo} alt="check us out on X" />
-                        <Icon src={MailLogo} alt="check us out on Gmail" />
+                        <Icon src="/svg/simple-icons_x.svg" alt="check us out on X" />
+                        <Icon src="/svg/tabler_mail.svg" alt="check us out on Gmail" />
                         <Icon
-                            src={LinkedInLogo}
+                            src="/svg/mingcute_linkedin-line.svg"
                             alt="check us out on LinkedIn"
                         />
                     </div>

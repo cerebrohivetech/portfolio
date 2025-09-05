@@ -2,7 +2,6 @@
 
 import { CaseStudyDisplay } from "@/components/cards/product";
 import { Section } from "@/components/elements";
-import CaseImage from "@/assets/images/project-display.png";
 import { Inter } from "next/font/google";
 
 const inter = Inter({
@@ -11,6 +10,7 @@ const inter = Inter({
 });
 
 export default function PortfolioSlugMain() {
+    const CaseImage = "/images/project-display.png"
     return (
         <Section>
             <div className="mb-10 lg:mb-20">

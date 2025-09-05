@@ -1,6 +1,5 @@
 import Button from "../../button";
 import { Section } from "../../elements";
-import RightArrowicon from "@/assets/svg/ep_top-right.svg";
 import { Inter } from "next/font/google";
 
 const inter = Inter({
@@ -67,7 +66,7 @@ function IndividualService(props: ServiceProp) {
             <Button
                 text="View case studies"
                 variant="normal"
-                icon={RightArrowicon}
+                icon="/svg/ep_top-right.svg"
                 link={link}
             />
         </div>

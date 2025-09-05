@@ -1,8 +1,6 @@
 import Image from "next/image";
 import Product from "@/components/cards/product";
 import { Section } from "@/components/elements";
-import CaseImage from "@/assets/images/project-display.png";
-import ProfileImage from "@/assets/images/profile.png";
 
 export default function ProductList() {
     // product state should be store here
@@ -17,6 +15,7 @@ export default function ProductList() {
 }
 
 function ProductContainer() {
+    const CaseImage = "/images/project-display.png"
     return (
         <>
             <div>
@@ -74,7 +73,7 @@ export function UserFeedback() {
             </p>
             <div className="flex items-center gap-2 pt-[16px] xl:pt-[26px]">
                 <div className="h-[32px] w-[32px] overflow-hidden rounded-full object-center">
-                    <Image src={ProfileImage} alt="profile image" />
+                    <Image src="/images/profile.png" alt="profile image" />
                 </div>
                 <span className="text-second-110 text-base/[1.5rem] font-normal">
                     Name

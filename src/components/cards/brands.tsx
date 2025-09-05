@@ -2,11 +2,6 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import GTBankIcon from "@/assets/svg/GUARANTY Trust Bank - jpeg 0.svg";
-import PayStackIcon from "@/assets/svg/Paystack - png 0.svg";
-import HarvardIcon from "@/assets/svg/Harvard University - png 0.svg";
-import StripeIcon from "@/assets/svg/Stripe - jpeg 0.svg";
-import PayPalIcon from "@/assets/svg/PayPal - png 0.svg";
 import { motion } from "framer-motion";
 
 export default function BrandCard() {
@@ -34,11 +29,11 @@ export default function BrandCard() {
 
 export function Companies() {
     const companyList = [
-        GTBankIcon,
-        PayStackIcon,
-        HarvardIcon,
-        StripeIcon,
-        PayPalIcon,
+        "/svg/GUARANTY Trust Bank - jpeg 0.svg",
+        "/svg/Paystack - png 0.svg",
+        "/svg/Harvard University - png 0.svg",
+        "/svg/Stripe - jpeg 0.svg",
+        "/svg/PayPal - png 0.svg",
     ];
 
     return (

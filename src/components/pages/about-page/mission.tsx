@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { Section } from "../../elements";
-import CerebroLogo from "@/assets/svg/cerebro.svg";
 import Button from "../../button";
 
 export function Mission() {
@@ -17,7 +16,7 @@ export function Mission() {
             <div className="relative flex flex-col-reverse justify-between gap-[40px] md:flex-row md:gap-[60px] lg:gap-[80px] xl:gap-[144px]">
                 <div className="relative w-full md:-top-[60px] md:h-[474px] md:w-[350px] md:shrink-0 lg:top-0 lg:w-[488px]">
                     <Image
-                        src={CerebroLogo}
+                        src="/svg/cerebro.svg"
                         alt="Logo"
                         className="h-full w-full"
                     />

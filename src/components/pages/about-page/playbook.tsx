@@ -1,6 +1,5 @@
 import Button from "../../button";
 import { Section } from "../../elements";
-import RightArrowIcon from "@/assets/svg/ep_top-right.svg";
 
 export function PlayBook() {
     const className =
@@ -64,7 +63,7 @@ export function PlayBook() {
                 <Button
                     text="View our portfolio"
                     variant="normal"
-                    icon={RightArrowIcon}
+                    icon="/svg/ep_top-right.svg"
                     link="/portfolio"
                 />
             </div>

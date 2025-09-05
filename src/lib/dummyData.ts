@@ -1,5 +1,7 @@
 import { StaticImageData } from "next/image";
-import ProfileImage from "@/assets/images/profile.png";
+
+
+const ProfileImage = "/images/profile.png"
 
 let nextId = 0;
 type Testimony = {

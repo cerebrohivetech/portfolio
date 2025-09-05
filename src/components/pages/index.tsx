@@ -1,3 +1,5 @@
+"use client"
+
 import ProductListing from "./productList-page";
 import { Team, Services, Mission, PlayBook, Values } from "./about-page";
 import {

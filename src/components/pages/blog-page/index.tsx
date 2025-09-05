@@ -1,9 +1,7 @@
 import Button from "@/components/button";
 import { CaseStudyDisplay } from "@/components/cards";
-import CaseImage from "@/assets/images/project-display.png";
 import { Section } from "@/components/elements";
 import Image, { StaticImageData } from "next/image";
-import ProfileImage from "@/assets/images/profile2.png";
 import Link from "next/link";
 import { BlogDetail, BlogSlugHero } from "./blog-slug";
 
@@ -29,7 +27,7 @@ function RecentBlog() {
             </div>
             <CaseStudyDisplay
                 className="mb-[24px] !w-full"
-                image={CaseImage}
+                image="/images/project-display.png"
                 isBlur={true}
             />
             <div className="mb-[32px] flex flex-col justify-between gap-[16px] md:flex-row md:gap-0">
@@ -100,7 +98,7 @@ function BlogItem() {
     return (
         <div className="relative w-full 2xl:w-[386px]">
             <CaseStudyDisplay
-                image={CaseImage}
+                image="/images/project-display.png"
                 className="!w-full !pt-[24px] md:!h-[420px]"
             />
             <div className="mt-5">
@@ -108,7 +106,7 @@ function BlogItem() {
                 <Publisher
                     name="Nwanozie Promise"
                     date="23rd May, 2024"
-                    img={ProfileImage}
+                    img="/images/profile2.png"
                 />
                 <p className="text-second-110 w-full text-sm/snug font-normal md:text-base lg:text-lg/loose">
                     Lorem ipsum dolor sit amet consectetur. Viverra adipiscing
