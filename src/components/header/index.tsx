@@ -102,7 +102,7 @@ function MobileMenu({
     showNav: boolean;
     setShowNav(value: boolean): void;
 }) {
-    const className = "text-second-70 mr-[30px] mb-3 text-xs font-[400]";
+    const className = "text-second-70 mr-[30px] mb-3 text-sm font-[400]";
     const navRef = useRef<HTMLElement>(null);
 
     useEffect(() => {
