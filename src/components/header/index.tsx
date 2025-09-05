@@ -19,7 +19,7 @@ export function Header() {
     };
 
     function handleShowNav() {
-        setShowNav((prevNav) => !prevNav);
+        setShowNav(prev => !prev);
     }
     return (
         <header className="shadow-first-60/[10%] md:shadow-first-60/[25%] sticky top-0 z-[100] flex h-[98px] w-full items-center justify-between bg-white p-[20px] shadow-sm md:px-[30px] md:shadow-lg lg:px-[50px] xl:px-[100px]">
@@ -107,13 +107,19 @@ function MobileMenu({
 
     useEffect(() => {
         function handleClickOutside(event: MouseEvent) {
+            // Only close if clicking outside, not on the menu button itself
             if (
                 navRef.current &&
                 event.target &&
                 !navRef.current.contains(event.target as Node)
             ) {
+                // Check if the menu button was clicked
+                const menuButton = document.querySelector('button[title="menu bar"]');
+                if (menuButton && menuButton.contains(event.target as Node)) {
+                    // Don't close if menu button was clicked
+                    return;
+                }
                 setShowNav(false);
-                console.log("Clicked outside!");
             }
         }
 
