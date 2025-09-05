@@ -138,8 +138,9 @@ function MobileMenu({
                 duration: 0.3,
             }}
             ref={navRef}
-            className={`shadow-second-70/[25%] ${showNav ? "absolute" : "hidden"} inset-x-0 inset-y-[98px] z-50 flex h-[250px] w-full flex-col items-start justify-between gap-2 bg-white px-[40px] py-[40px] shadow-sm md:hidden`}
-        >
+            className={`shadow-second-70/[25%] ${showNav ? "absolute" : "hidden"} inset-x-0 inset-y-[98px] z-50 h-[250px] w-full gap-2 bg-white px-[40px] py-[40px] shadow-sm md:hidden`}
+
+>
             <ul className="items-center md:flex">
                 <li className={className}>
                     <Link href="/about">About us</Link>
@@ -156,8 +157,9 @@ function MobileMenu({
                 <li className={className}>
                     <Link href="/contact">Contact us</Link>
                 </li>
+                <Button text="Get a quote" variant="standard" link="/get_quote" className="mb-5" />
             </ul>
-            <Button text="Get a quote" variant="standard" link="/get_quote" />
+            
         </motion.nav>
     );
 }
